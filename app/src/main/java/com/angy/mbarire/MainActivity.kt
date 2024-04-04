@@ -113,6 +113,12 @@ fun Greeting() {
           Text(text = "assignment")
       }
 
+      val web = LocalContext.current
+      Button(onClick = {
+          web.startActivity(Intent(input, WebActivity::class.java))
+      }) {
+          Text(text = "web")
+      }
 
 
   }
